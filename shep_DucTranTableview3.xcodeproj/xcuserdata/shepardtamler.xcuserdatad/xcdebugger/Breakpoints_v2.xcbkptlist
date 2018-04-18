@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PrettyApple/shepEditableDetailVC.swift"
+            timestampString = "545516501.7282211"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "shepEditableDetailVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "shepProductName.shepEditableDetailVC.shepProductDetail.getter : Swift.Optional&lt;shepProductName.ShepSingleXYZ&gt;"
+                  moduleName = "shepProductName"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran3/PrettyApple-CompleteProject/PrettyApple/shepEditableDetailVC.swift"
+                  timestampString = "545777465.376681"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "shepProductName.shepEditableDetailVC.shepProductDetail.setter : Swift.Optional&lt;shepProductName.ShepSingleXYZ&gt;"
+                  moduleName = "shepProductName"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran3/PrettyApple-CompleteProject/PrettyApple/shepEditableDetailVC.swift"
+                  timestampString = "545777465.385247"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "shepProductName.shepEditableDetailVC.init(style: __C.UITableViewStyle) -&gt; shepProductName.shepEditableDetailVC"
+                  moduleName = "shepProductName"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran3/PrettyApple-CompleteProject/PrettyApple/shepEditableDetailVC.swift"
+                  timestampString = "545777465.391554"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "39">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "shepProductName.shepEditableDetailVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; shepProductName.shepEditableDetailVC"
+                  moduleName = "shepProductName"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran3/PrettyApple-CompleteProject/PrettyApple/shepEditableDetailVC.swift"
+                  timestampString = "545777465.396259"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "shepProductName.shepEditableDetailVC.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;shepProductName.shepEditableDetailVC&gt;"
+                  moduleName = "shepProductName"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran3/PrettyApple-CompleteProject/PrettyApple/shepEditableDetailVC.swift"
+                  timestampString = "545777465.398958"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PrettyApple/shepEditableDetailVC.swift"
+            timestampString = "545516501.730881"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PrettyApple/shepEditableDetailVC.swift"
+            timestampString = "545516501.731463"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewWillDisappear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PrettyApple/shepEditableDetailVC.swift"
+            timestampString = "545516501.73197"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "textFieldShouldReturn(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PrettyApple/shepEditableDetailVC.swift"
+            timestampString = "545516501.7324769"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "shepEditableDetailVC"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PrettyApple/shepEditableDetailVC.swift"
+            timestampString = "545516501.732985"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "tableView(_:willSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PrettyApple/shepEditableDetailVC.swift"
+            timestampString = "545516501.733426"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PrettyApple/shepEditableDetailVC.swift"
+            timestampString = "545516501.733856"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PrettyApple/ShepTVController.swift"
+            timestampString = "545777465.187822"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "242"
+            endingLineNumber = "242"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PrettyApple/ShepTVController.swift"
+            timestampString = "545777465.188314"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PrettyApple/ShepTVController.swift"
+            timestampString = "545777465.188659"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "ShepTVController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "shep_DucTranTableview2.ShepTVController.BigKahunaSectionedArray.getter : Swift.Array&lt;shep_DucTranTableview2.sectionOfProducts_class&gt;"
+                  moduleName = "shep_DucTranTableview2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran2/PrettyApple-CompleteProject/PrettyApple/ShepTVController.swift"
+                  timestampString = "545579684.59187"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "135">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Array&lt;shep_DucTranTableview2.sectionOfProducts_class&gt; in shep_DucTranTableview2.ShepTVController.BigKahunaSectionedArray.getter : Swift.Array&lt;shep_DucTranTableview2.sectionOfProducts_class&gt;"
+                  moduleName = "shep_DucTranTableview2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran2/PrettyApple-CompleteProject/PrettyApple/ShepTVController.swift"
+                  timestampString = "545579684.5938981"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "shep_DucTranTableview2.ShepTVController.BigKahunaSectionedArray.setter : Swift.Array&lt;shep_DucTranTableview2.sectionOfProducts_class&gt;"
+                  moduleName = "shep_DucTranTableview2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran2/PrettyApple-CompleteProject/PrettyApple/ShepTVController.swift"
+                  timestampString = "545579684.595776"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "shep_DucTranTableview2.ShepTVController.init(style: __C.UITableViewStyle) -&gt; shep_DucTranTableview2.ShepTVController"
+                  moduleName = "shep_DucTranTableview2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran2/PrettyApple-CompleteProject/PrettyApple/ShepTVController.swift"
+                  timestampString = "545579684.597301"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "39">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "shep_DucTranTableview2.ShepTVController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; shep_DucTranTableview2.ShepTVController"
+                  moduleName = "shep_DucTranTableview2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran2/PrettyApple-CompleteProject/PrettyApple/ShepTVController.swift"
+                  timestampString = "545579684.59885"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "shep_DucTranTableview2.ShepTVController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;shep_DucTranTableview2.ShepTVController&gt;"
+                  moduleName = "shep_DucTranTableview2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran2/PrettyApple-CompleteProject/PrettyApple/ShepTVController.swift"
+                  timestampString = "545579684.600368"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PrettyApple/sectionOfProducts2_class.swift"
+            timestampString = "545777465.189005"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "getAllTheSections()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PrettyApple/tempSingleArray.swift"
+            timestampString = "545777465.189091"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "buildSingleArray()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
