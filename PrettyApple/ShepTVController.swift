@@ -31,27 +31,11 @@ class ShepTVController: UITableViewController {
     
     //MARK: Properties
     
-    /*  SOME STACKOVERFLOW TALK RE SINGLE NESTED/SECTIONED ARRAY FOR TABLEVIEW
-     //It is batter if you create single Array of struct or custom class that will reduce all your array to a single array.
-     // ... suggest creating a Section object that contains a sectionTitle String and a sectionEntries Array. Then make the table view data an array of Section objects.
-     
-     struct Category {
-       let name : String
-       var items : [[String:Any]]
-     }
-     
-     var BigKahunaSectionedArray = [Category]()
-     
-     let itemsA = [["Item": "item A","ItemId" : "1"],["Item": "item B","ItemId" : "2"],["Item": "item C","ItemId" : "3"]]
-     let itemsB = [["Item": "item A","ItemId" : "1"],["Item": "item B","ItemId" : "2"],["Item": "item C","ItemId" : "3"]]
-     let itemsC = [["Item": "item A","ItemId" : "1"],["Item": "item B","ItemId" : "2"],["Item": "item C","ItemId" : "3"]]
-     
-     sections = [Category(name:"A", items:itemsA), Category(name:"B", items:itemsB), Category(name:"C", items:itemsC)]
- */
-    lazy var BigKahunaSectionedArray: [sectionOfProducts2_class] = {
+
+    lazy var BigKahunaSectionedArray: [allSectionsOfData4TVC] = {
         // I don't get all the syntax here, but the concept is: line above declares as an array of sectionOfProducts_class
         // then in line below, populates this array by using sectionOfProducts_class.getAllTheSections method
-        return sectionOfProducts2_class.getAllTheSections()
+        return allSectionsOfData4TVC.getAllTheSections()
     }()
     
     // This code declares a property on ShepTableViewController and initializes it with a default value (an empty array of ShepSingleItem objects)
@@ -74,9 +58,11 @@ class ShepTVController: UITableViewController {
         // actual edit funtionality in func:  commit editingStyle: UITableViewCellEditingStyle
         navigationItem.rightBarButtonItem = editButtonItem
         
-        // Make the row height dynamic
-        tableView.estimatedRowHeight = tableView.rowHeight
-        tableView.rowHeight = UITableViewAutomaticDimension
+//        // Make the row height dynamic
+//        tableView.estimatedRowHeight = tableView.rowHeight
+//        //tableView.estimatedRowHeight = 185.0
+//        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.contentSize.height = 150
         
         // --------------------------------------------------------------------------
         // Uncomment the following line to preserve selection between presentations
@@ -142,7 +128,8 @@ class ShepTVController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let productLine = BigKahunaSectionedArray[section]
-        return productLine.oneSectionProductsArray.count   // the number of products in the section
+        return productLine.oneSectionOfData.count   // the number of products in the section
+        //productLine.oneSectionOfData
     }
 
     // indexPath: which section and which row
@@ -152,7 +139,7 @@ class ShepTVController: UITableViewController {
         //let cell = tableView.dequeueReusableCell(withIdentifier: "shepOrigProductTVCell", for: indexPath) as! shepOrigProductTVCell
         let cell = tableView.dequeueReusableCell(withIdentifier: "ShepTableViewCell", for: indexPath) as! ShepTableViewCell
         let productLine = BigKahunaSectionedArray[indexPath.section]
-        let product = productLine.oneSectionProductsArray[indexPath.row]
+        let product = productLine.oneSectionOfData[indexPath.row]
 
         cell.setupCell(product)
         
@@ -185,8 +172,8 @@ class ShepTVController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
-            let productLine = BigKahunaSectionedArray[indexPath.section]
-            productLine.oneSectionProductsArray.remove(at: indexPath.row)
+            var productLine = BigKahunaSectionedArray[indexPath.section]
+            productLine.oneSectionOfData.remove(at: indexPath.row)
             // tell the table view to update with new data source
             // tableView.reloadData()    Bad way!
             tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
@@ -219,13 +206,13 @@ class ShepTVController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath)
     {
-        let productToMove = BigKahunaSectionedArray[sourceIndexPath.section].oneSectionProductsArray[sourceIndexPath.row]
+        let productToMove = BigKahunaSectionedArray[sourceIndexPath.section].oneSectionOfData[sourceIndexPath.row]
         
         // move productToMove to destinationIndexPath
-        BigKahunaSectionedArray[destinationIndexPath.section].oneSectionProductsArray.insert(productToMove, at: destinationIndexPath.row)
+        BigKahunaSectionedArray[destinationIndexPath.section].oneSectionOfData.insert(productToMove, at: destinationIndexPath.row)
         
         // delete the productToMove from sourceIndexPath
-        BigKahunaSectionedArray[sourceIndexPath.section].oneSectionProductsArray.remove(at: sourceIndexPath.row)
+        BigKahunaSectionedArray[sourceIndexPath.section].oneSectionOfData.remove(at: sourceIndexPath.row)
     }
 
     
@@ -260,7 +247,7 @@ class ShepTVController: UITableViewController {
     func productAtIndexPath(_ indexPath: IndexPath) -> ShepSingleXYZ
     {
         let productLine = BigKahunaSectionedArray[indexPath.section]
-        return productLine.oneSectionProductsArray[indexPath.row]
+        return productLine.oneSectionOfData[indexPath.row]
     }
     
     //MARK: Private Methods
