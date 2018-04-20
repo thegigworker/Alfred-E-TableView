@@ -25,11 +25,11 @@ struct allSectionsOfData4TVC {
         var oneSectionOfData2 = [ShepSingleXYZ]()
         let MYtempSingleArray = tempSingleArray_class.buildSingleTableArray()
         
-        //let sortedTempProductsArray = tempProductsArray.sorted(by: { $0.title < $1.title })
-        //let sortedTempProductsArray = tempProductsArray.sorted(by: { $0.dollar > $1.dollar })
+        //let sortedTempProductsArray = MYtempSingleArray.sorted(by: { $0.title < $1.title })
+        //let sortedTempProductsArray = MYtempSingleArray.sorted(by: { $0.dollar > $1.dollar })
         //let sortedTempSingleArray = MYtempSingleArray.sorted(by: { $0.jobType < $1.jobType })
-        let sortedTempSingleArray = MYtempSingleArray.sorted(by: { $0.foodType < $1.foodType })
-        //let sortedTempProductsArray = tempProductsArray.sorted(by: { $0.distance < $1.distance })
+        //let sortedTempSingleArray = MYtempSingleArray.sorted(by: { $0.foodType < $1.foodType })
+        let sortedTempSingleArray = MYtempSingleArray.sorted(by: { $0.distance < $1.distance })
         
         for item in sortedTempSingleArray {
             //tempShepSingleXYZ = item
@@ -38,13 +38,13 @@ struct allSectionsOfData4TVC {
             // "break" to exit the loop statement
             if currentSectionName == "" {
                 // first item through
-                currentSectionName = item.foodType
-                //currentSectionName = item.jobType
+                //currentSectionName = item.foodType
+                currentSectionName = item.jobType
                 oneSectionOfData2.append(item)
                // print ("first item through")
             } else { // not first time through
-                if item.foodType == currentSectionName {
-                //if item.jobType == currentSectionName {
+                //if item.foodType == currentSectionName {
+                if item.jobType == currentSectionName {
                     oneSectionOfData2.append(item)
                 } else {
                     // is new category/section
@@ -53,8 +53,8 @@ struct allSectionsOfData4TVC {
                     
                     myBigKahunaSectionedArray.append (allSectionsOfData4TVC(named: currentSectionName, includeItems: oneSectionOfData2))
                     oneSectionOfData2.removeAll()
-                    currentSectionName = item.foodType
-                    //currentSectionName = item.jobType
+                    //currentSectionName = item.foodType
+                    currentSectionName = item.jobType
                     oneSectionOfData2.append(item)
                 }
             }

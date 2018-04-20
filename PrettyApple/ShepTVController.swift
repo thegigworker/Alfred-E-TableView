@@ -97,7 +97,7 @@ class ShepTVController: UITableViewController {
         
         // WAY TO SET PROPERTIES RIGHT HERE: headerCell.lblCategory.text =  BigKahunaSectionedArray[section].sectionName
         let labelText = BigKahunaSectionedArray[section].sectionName    // sectionTitles[section]
-        headerInSectionCell.configureCellWith(labelText: "shep says: " + labelText) // (labelText: String, image: UIImage) etc.
+        headerInSectionCell.configureCellWith(labelText: "---  " + labelText + "  ---") // (labelText: String, image: UIImage) etc.
         return headerInSectionCell
         
         // CREATE HEADER CELL VIA CODE
