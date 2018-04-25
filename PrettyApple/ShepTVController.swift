@@ -35,6 +35,7 @@ class ShepTVController: UITableViewController {
     lazy var BigKahunaSectionedArray: [allSectionsOfData4TVC] = {
         // I don't get all the syntax here, but the concept is: line above declares as an array of sectionOfProducts_class
         // then in line below, populates this array by using sectionOfProducts_class.getAllTheSections method
+        //let temp = allSectionsOfData4TVC
         return allSectionsOfData4TVC.getAllTheSections()
     }()
     

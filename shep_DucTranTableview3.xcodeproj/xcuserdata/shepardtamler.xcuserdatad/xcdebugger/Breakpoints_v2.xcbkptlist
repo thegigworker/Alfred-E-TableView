@@ -26,7 +26,7 @@
                   moduleName = "shepProductName"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran3/PrettyApple-CompleteProject/PrettyApple/shepEditableDetailVC.swift"
-                  timestampString = "545943068.605181"
+                  timestampString = "545954195.521853"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -41,7 +41,7 @@
                   moduleName = "shepProductName"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran3/PrettyApple-CompleteProject/PrettyApple/shepEditableDetailVC.swift"
-                  timestampString = "545943068.610369"
+                  timestampString = "545954195.525165"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -56,7 +56,7 @@
                   moduleName = "shepProductName"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran3/PrettyApple-CompleteProject/PrettyApple/shepEditableDetailVC.swift"
-                  timestampString = "545943068.6134731"
+                  timestampString = "545954195.534729"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -71,7 +71,7 @@
                   moduleName = "shepProductName"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran3/PrettyApple-CompleteProject/PrettyApple/shepEditableDetailVC.swift"
-                  timestampString = "545943068.61615"
+                  timestampString = "545954195.538071"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -86,7 +86,7 @@
                   moduleName = "shepProductName"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran3/PrettyApple-CompleteProject/PrettyApple/shepEditableDetailVC.swift"
-                  timestampString = "545943068.618956"
+                  timestampString = "545954195.540722"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -220,8 +220,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "244"
             endingLineNumber = "244"
-            landmarkName = "ShepTVController"
-            landmarkType = "3">
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -387,13 +387,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrettyApple/allSectionsOfData4TVC.swift"
-            timestampString = "545945459.806258"
+            timestampString = "546209483.204865"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "getAllTheSections()"
-            landmarkType = "7">
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "allSectionsOfData4TVC"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -403,11 +403,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrettyApple/allSectionsOfData4TVC.swift"
-            timestampString = "545945459.806574"
+            timestampString = "546209483.205243"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "allSectionsOfData4TVC"
             landmarkType = "14">
             <Locations>
@@ -419,12 +419,12 @@
                   moduleName = "shepProductName"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran3/PrettyApple-CompleteProject/PrettyApple/allSectionsOfData4TVC.swift"
-                  timestampString = "545943068.66725"
+                  timestampString = "545954195.589942"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
-                  offsetFromSymbolStart = "44">
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "46">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -434,11 +434,11 @@
                   moduleName = "shepProductName"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/shepardtamler/Library/Mobile%20Documents/com~apple~CloudDocs/Developer/shep_UITableView-DucTran3/PrettyApple-CompleteProject/PrettyApple/allSectionsOfData4TVC.swift"
-                  timestampString = "545943068.669536"
+                  timestampString = "545954195.592068"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
                   offsetFromSymbolStart = "90">
                </Location>
             </Locations>
@@ -451,11 +451,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrettyApple/allSectionsOfData4TVC.swift"
-            timestampString = "545945459.806765"
+            timestampString = "546209483.205587"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
             landmarkName = "getAllTheSections()"
             landmarkType = "7">
          </BreakpointContent>
@@ -467,11 +467,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrettyApple/allSectionsOfData4TVC.swift"
-            timestampString = "545945459.806952"
+            timestampString = "546209483.2058001"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "getAllTheSections()"
             landmarkType = "7">
          </BreakpointContent>
