@@ -33,10 +33,14 @@ class ShepTVController: UITableViewController {
     
 
     lazy var BigKahunaSectionedArray: [allSectionsOfData4TVC] = {
-        // I don't get all the syntax here, but the concept is: line above declares as an array of sectionOfProducts_class
+        // Line above declares as an array of sectionOfProducts_class
         // then in line below, populates this array by using sectionOfProducts_class.getAllTheSections method
-        //let temp = allSectionsOfData4TVC
-        return allSectionsOfData4TVC.getAllTheSections()
+        return allSectionsOfData4TVC.handleAllTheSections(whichSort: "jobType")
+//        case "jobType" :   // CATEGORY !
+//        case "foodType" :   // CATEGORY 2
+//        case "dollar" : // SINGLE SECTION 1
+//        case "distance" : // SINGLE SECTION 2
+//        case "title" : // SINGLE SECTION 3
     }()
     
     // This code declares a property on ShepTableViewController and initializes it with a default value (an empty array of ShepSingleItem objects)
