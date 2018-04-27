@@ -36,11 +36,7 @@ struct allSectionsOfData4TVC {
     
     static func handleAllTheSections(whichSort: String) -> [allSectionsOfData4TVC] {
         var myBigKahunaSectionedArray = [allSectionsOfData4TVC]()
-        //var oneSectionOfData2 = [ShepSingleXYZ]()
         let MYtempSingleArray = tempSingleArray_class.buildSingleTableArray()
-        //var sortedTempSingleArray = MYtempSingleArray
-        //var currentSectionName = ""
-        //var loopCount = 0
         
         switch whichSort {
         case "jobType" :   // CATEGORY !
@@ -80,7 +76,6 @@ struct allSectionsOfData4TVC {
         }
         return myBigKahunaSectionedArray
     }
-    
     
     static func doOneSection(sortedTempSingleArray: [ShepSingleXYZ], whichSort: String) -> [allSectionsOfData4TVC] {
         var tempBigKahunaSectionedArray = [allSectionsOfData4TVC]()

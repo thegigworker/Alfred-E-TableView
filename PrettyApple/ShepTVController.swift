@@ -27,7 +27,7 @@ import UIKit
 //In the Identity inspector, find the field labeled Class, and select shepProductsTVController.
 ///////////////////
 
-class ShepTVController: UITableViewController {
+class ShepTVController: UITableViewController, UIPopoverPresentationControllerDelegate {
     
     //MARK: Properties
     
@@ -175,23 +175,34 @@ class ShepTVController: UITableViewController {
     // MARK: - Edit Tableview
     
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
             var productLine = BigKahunaSectionedArray[indexPath.section]
             productLine.oneSectionOfData.remove(at: indexPath.row)
-            // tell the table view to update with new data source
-            // tableView.reloadData()    Bad way!
+            
+//            // tell the table view to update with new data source
+//            // tableView.reloadData()    Bad way!
+            
             tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
-            // Note that there are many other types of UITableViewRowAnimation possible
+            //            // Note that there are many other types of UITableViewRowAnimation possible
+            
+            // DANGER, DANGER WILL ROBINSON  ////
             /*
-             if editingStyle == .delete {
-             // Delete the row from the data source
-             tableView.deleteRows(at: [indexPath], with: .fade)
-             } else if editingStyle == .insert {
-             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-             }
+             2018-04-25 14:35:09.041858-0400 shepProductName[18221:4466219] *** Assertion failure in -[UITableView _endCellAnimationsWithContext:], /BuildRoot/Library/Caches/com.apple.xbs/Sources/UIKit_Sim/UIKit-3698.52.10/UITableView.m:2012
+             2018-04-25 14:35:09.047566-0400 shepProductName[18221:4466219] *** Terminating app due to uncaught exception 'NSInternalInconsistencyException', reason: 'Invalid update: invalid number of rows in section 1.  The number of rows contained in an existing section after the update (4) must be equal to the number of rows contained in that section before the update (4), plus or minus the number of rows inserted or deleted from that section (0 inserted, 1 deleted) and plus or minus the number of rows moved into or out of that section (0 moved in, 0 moved out).'
+             *** First throw call stack:
              */
-        }
+
+//
+            /*
+//             if editingStyle == .delete {
+//             // Delete the row from the data source
+//             tableView.deleteRows(at: [indexPath], with: .fade)
+//             } else if editingStyle == .insert {
+//             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+//             }
+//             */
+       }
     }
     
     /*
@@ -227,6 +238,18 @@ class ShepTVController: UITableViewController {
         super.prepare(for: segue, sender: sender)
         // The UIViewController class’s implementation doesn’t do anything, but it’s a good habit to always call super.prepare(for:sender:) whenever you override prepare(for:sender:). That way you won’t forget it when you subclass a different class.
         
+        
+        let controller = segue.destination
+        if let xsearchRadiusPopOver = controller.popoverPresentationController{
+            //            //nv.delegate = self
+            xsearchRadiusPopOver.delegate = (self as UIPopoverPresentationControllerDelegate)
+            //        }
+        
+//        if let xsearchRadiusPopOver = controller.popoverPresentationController{
+//            //nv.delegate = self
+//            xsearchRadiusPopOver.delegate = self
+        }
+        
         if let identifier = segue.identifier {
             switch identifier {
             // Get the new view controller using segue.destination.
@@ -246,6 +269,36 @@ class ShepTVController: UITableViewController {
             }
         }
     }
+    
+    //MARK:----popoverPresentationController functions----
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let controller = segue.destination
+//        if let xsearchRadiusPopOver = controller.popoverPresentationController{
+//            //nv.delegate = self
+//            xsearchRadiusPopOver.delegate = self
+//        }
+//    }
+    
+    //    internal func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+    //        return .none
+    //    }
+    
+    func popoverPresentationControllerShouldDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) -> Bool {
+        return true
+    }
+    
+    func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
+        //let myshepSortingHatVC = shepSortingHatPopover()
+        //let myOtherDataModel = shepDataModel()
+        print (" SORT BY menu dismissed. \n You chose: \(whichSort)")
+    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+    
+    
+    
     
     // MARK: - Helper Method
     
