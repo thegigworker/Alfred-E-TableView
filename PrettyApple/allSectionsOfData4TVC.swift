@@ -45,7 +45,7 @@ struct allSectionsOfData4TVC {
         case "foodType" :   // CATEGORY 2
             let sortedTempSingleArray = MYtempSingleArray.sorted(by: { $0.foodType < $1.foodType })
             myBigKahunaSectionedArray = doMultipleSections(sortedTempSingleArray: sortedTempSingleArray, whichSort: whichSort)
-        case "dollar" : // SINGLE SECTION 1
+        case "dollars" : // SINGLE SECTION 1
             let sortedTempSingleArray = MYtempSingleArray.sorted(by: { $0.dollar > $1.dollar })
             myBigKahunaSectionedArray = doOneSection(sortedTempSingleArray: sortedTempSingleArray, whichSort: whichSort)
         case "distance" : // SINGLE SECTION 2
@@ -74,6 +74,7 @@ struct allSectionsOfData4TVC {
              // MORE NOTES BELOW
              */
         }
+        print("\n \n \n I'm done building myBigKahunaSectionedArray w sort \(whichSort)")
         return myBigKahunaSectionedArray
     }
     
@@ -81,6 +82,7 @@ struct allSectionsOfData4TVC {
         var tempBigKahunaSectionedArray = [allSectionsOfData4TVC]()
         //tempBigKahunaSectionedArray.append (allSectionsOfData4TVC(named: "ALL ONE SECTION", includeItems: sortedTempSingleArray))
         tempBigKahunaSectionedArray.append (allSectionsOfData4TVC(named: whichSort, includeItems: sortedTempSingleArray))
+        print("****  I'm in doOneSection w sort \(whichSort)")
         return tempBigKahunaSectionedArray
     }
     
@@ -89,6 +91,7 @@ struct allSectionsOfData4TVC {
         var oneSectionOfData = [ShepSingleXYZ]()
         var currentSectionName = ""
         var loopCount = 0
+        print("**** I'm in MultipleSections w sort \(whichSort)")
         
         for item in sortedTempSingleArray {
             // NOTE: "continue" to move loop to next iteration/item

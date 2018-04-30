@@ -6,17 +6,19 @@
 import UIKit
 import MapKit
 
-var whichSort = "hello3"
+var whichSort = "dollars"
+
+//case "jobType" :   // CATEGORY !
+//case "foodType" :   // CATEGORY 2
+//case "dollars" : // SINGLE SECTION 1
+//case "distance" : // SINGLE SECTION 2
+//case "title" : // SINGLE SECTION 3
+
 
 class shepSortingHatPopover: UIViewController, UIPopoverPresentationControllerDelegate {
     
-    //let myDataModel = shepDataModel()
-    //let myMapView = shepMapViewController().myMapView
-    //var searchDistanceCircle:MKCircle!
-    
     //@IBOutlet weak var xyz: UIButton!
     
-    //var whichSort = "hello2"
     //let myDataModel = shepDataModel()
     
     @IBOutlet weak var btnDrivingDistance: UIButton!

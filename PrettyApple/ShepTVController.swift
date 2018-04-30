@@ -33,9 +33,10 @@ class ShepTVController: UITableViewController, UIPopoverPresentationControllerDe
     
 
     lazy var BigKahunaSectionedArray: [allSectionsOfData4TVC] = {
+        print("I think I'm changing BigKahunaSectionedArray")
         // Line above declares as an array of sectionOfProducts_class
-        // then in line below, populates this array by using sectionOfProducts_class.getAllTheSections method
-        return allSectionsOfData4TVC.handleAllTheSections(whichSort: "jobType")
+        // then in line below, populates this array by using allSectionsOfData4TVC_class.getAllTheSections method
+        return allSectionsOfData4TVC.handleAllTheSections(whichSort: whichSort)
 //        case "jobType" :   // CATEGORY !
 //        case "foodType" :   // CATEGORY 2
 //        case "dollar" : // SINGLE SECTION 1
@@ -69,6 +70,11 @@ class ShepTVController: UITableViewController, UIPopoverPresentationControllerDe
 //        tableView.rowHeight = UITableViewAutomaticDimension
         tableView.contentSize.height = 150
         
+        //NOT NEEDED??
+        // Not exactly sure what's happening here, but generally we're seeting up some kind of notifier to trigger @objc func loadList()
+        //NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)
+        
+        
         // --------------------------------------------------------------------------
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -82,9 +88,20 @@ class ShepTVController: UITableViewController, UIPopoverPresentationControllerDe
        // loadSampleMeals()  // Load the sample data.
     }
     
+    
+//    @objc func loadList(){
+//        //load data here
+//        self.tableView.reloadData()
+//    }
+    
+//    @objc func loadList(notification: NSNotification){
+//        //load data here
+//        self.tableView.reloadData()
+//    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        tableView.reloadData()
+        //tableView.reloadData()  // Reloads everything from scratch. Redisplays visible rows. Note that this will cause any existing drop placeholder rows to be removed.
     }
  
     // MARK: - ForHeaderInSection
@@ -128,11 +145,19 @@ class ShepTVController: UITableViewController, UIPopoverPresentationControllerDe
    // MARK: - Table view data source methods
     
     override func numberOfSections(in tableView: UITableView) -> Int {
+        let temp = BigKahunaSectionedArray.count
+        print("I'm in numberOfSections(in tableView  counting BigKahunaSectionedArray w sort \(whichSort)")
+        print("The count is \(temp) \n")
         return BigKahunaSectionedArray.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let productLine = BigKahunaSectionedArray[section]
+        let temp = productLine
+        print("\n I'm counting a SECTION of BigKahunaSectionedArray w sort \(whichSort)")
+        print("I'm counting a SECTION of BigKahunaSectionedArray w SECTION NAME \(temp.sectionName)")
+        print("I'm counting a SECTION of BigKahunaSectionedArray w SECTION ??? \(section)")
+        print("The count is \(productLine.oneSectionOfData.count)")
         return productLine.oneSectionOfData.count   // the number of products in the section
         //productLine.oneSectionOfData
     }
@@ -144,8 +169,13 @@ class ShepTVController: UITableViewController, UIPopoverPresentationControllerDe
         //let cell = tableView.dequeueReusableCell(withIdentifier: "shepOrigProductTVCell", for: indexPath) as! shepOrigProductTVCell
         let cell = tableView.dequeueReusableCell(withIdentifier: "ShepTableViewCell", for: indexPath) as! ShepTableViewCell
         let productLine = BigKahunaSectionedArray[indexPath.section]
+        let temp = productLine
         let product = productLine.oneSectionOfData[indexPath.row]
-
+        let temp2 = product
+        print("\n" + "I'm doing cellForRowAt indexPath w sort \(whichSort)")
+        print("I'm doing cellForRowAt indexPath w SECTION NAME \(temp.sectionName)")
+        print("temp2 = \(temp2.title)       \(temp2.foodType)         \(temp2.jobType)")
+        print("distance = \(temp2.distance)     dollars = \(temp2.dollar)")
         cell.setupCell(product)
         
         return cell
@@ -240,14 +270,8 @@ override func tableView(_ tableView: UITableView, commit editingStyle: UITableVi
         
         
         let controller = segue.destination
-        if let xsearchRadiusPopOver = controller.popoverPresentationController{
-            //            //nv.delegate = self
-            xsearchRadiusPopOver.delegate = (self as UIPopoverPresentationControllerDelegate)
-            //        }
-        
-//        if let xsearchRadiusPopOver = controller.popoverPresentationController{
-//            //nv.delegate = self
-//            xsearchRadiusPopOver.delegate = self
+        if let sortByPopOver = controller.popoverPresentationController{
+            sortByPopOver.delegate = self
         }
         
         if let identifier = segue.identifier {
@@ -290,7 +314,15 @@ override func tableView(_ tableView: UITableView, commit editingStyle: UITableVi
     func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
         //let myshepSortingHatVC = shepSortingHatPopover()
         //let myOtherDataModel = shepDataModel()
-        print (" SORT BY menu dismissed. \n You chose: \(whichSort)")
+        print ("SORT BY MENU DISMISSED. \n" + "You chose: \(whichSort)")
+      
+        BigKahunaSectionedArray = allSectionsOfData4TVC.handleAllTheSections(whichSort: whichSort)
+        tableView.reloadData()  // Reloads everything from scratch. Redisplays visible rows. Note that this will cause any existing drop placeholder rows to be removed.
+       
+        //Trigger data reload?
+       // NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
+         //NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
+        
     }
     
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
