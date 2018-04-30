@@ -37,11 +37,11 @@ class ShepTVController: UITableViewController, UIPopoverPresentationControllerDe
         // Line above declares as an array of sectionOfProducts_class
         // then in line below, populates this array by using allSectionsOfData4TVC_class.getAllTheSections method
         return allSectionsOfData4TVC.handleAllTheSections(whichSort: whichSort)
-//        case "jobType" :   // CATEGORY !
-//        case "foodType" :   // CATEGORY 2
-//        case "dollar" : // SINGLE SECTION 1
-//        case "distance" : // SINGLE SECTION 2
-//        case "title" : // SINGLE SECTION 3
+        //case "distance" : // SINGLE SECTION 1
+        //case "title" : // SINGLE SECTION 2
+        //case "dollars" : // SINGLE SECTION 3
+        //case "jobType" :   // CATEGORY !
+        //case "foodType" :   // CATEGORY 2
     }()
     
     // This code declares a property on ShepTableViewController and initializes it with a default value (an empty array of ShepSingleItem objects)
@@ -319,16 +319,18 @@ override func tableView(_ tableView: UITableView, commit editingStyle: UITableVi
         BigKahunaSectionedArray = allSectionsOfData4TVC.handleAllTheSections(whichSort: whichSort)
         tableView.reloadData()  // Reloads everything from scratch. Redisplays visible rows. Note that this will cause any existing drop placeholder rows to be removed.
        
-        //Trigger data reload?
-       // NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
-         //NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
+        /*
+        The UITableView's reloadData() method is explicitly a force reload of the entire tableView. It works well, but is usually jarring and a bad user experience if you're going to do that with a tableview that the user is currently looking at.
+        
+        Instead, take a look at reloadRowsAtIndexPaths(_:withRowAnimation:) and
+        reloadSections(_:withRowAnimation:) in the documentation.
+        */
         
     }
     
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return .none
     }
-    
     
     
     
