@@ -19,7 +19,7 @@ class shepEditableDetailVC: UITableViewController, UITextFieldDelegate, UITextVi
     // MARK: - VC Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Editable Details"
+        title = "Detail View"
         productImageView.image = shepProductDetail?.image
         productTitleLabel.text = shepProductDetail?.title
         productDescriptionTextView.text = shepProductDetail?.description

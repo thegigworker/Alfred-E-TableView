@@ -21,8 +21,8 @@
 		A1C6D8A72020AF570052B367 /* shepSecondDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6D8A42020AF240052B367 /* shepSecondDetailVC.swift */; };
 		A1C6D8A82020AF570052B367 /* ShepTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6D8A32020AF1F0052B367 /* ShepTVController.swift */; };
 		A1C6D8AF2020AFB70052B367 /* sectionOfProducts_class.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6D8AD2020AFB70052B367 /* sectionOfProducts_class.swift */; };
+		A1DA027120990AB400EDB5AA /* shepEditableDetailVC_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DA027020990AB400EDB5AA /* shepEditableDetailVC_2.swift */; };
 		A1DE6E68208688E40053E271 /* allSectionsOfData4TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DE6E67208688E40053E271 /* allSectionsOfData4TVC.swift */; };
-		A1DEB5F12098FF560052674D /* shepDetailVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEB5F02098FF560052674D /* shepDetailVC2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +42,8 @@
 		A1C6D8A42020AF240052B367 /* shepSecondDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shepSecondDetailVC.swift; sourceTree = "<group>"; };
 		A1C6D8A52020AF270052B367 /* shepEditableDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shepEditableDetailVC.swift; sourceTree = "<group>"; };
 		A1C6D8AD2020AFB70052B367 /* sectionOfProducts_class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sectionOfProducts_class.swift; sourceTree = "<group>"; };
+		A1DA027020990AB400EDB5AA /* shepEditableDetailVC_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shepEditableDetailVC_2.swift; sourceTree = "<group>"; };
 		A1DE6E67208688E40053E271 /* allSectionsOfData4TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allSectionsOfData4TVC.swift; sourceTree = "<group>"; };
-		A1DEB5F02098FF560052674D /* shepDetailVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shepDetailVC2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				A1C6D8A32020AF1F0052B367 /* ShepTVController.swift */,
-				A1DEB5F02098FF560052674D /* shepDetailVC2.swift */,
+				A1DA027020990AB400EDB5AA /* shepEditableDetailVC_2.swift */,
 				A1AAC39620929E90005FBBD7 /* shep_SortingHatPopover.swift */,
 				A1C6D8A52020AF270052B367 /* shepEditableDetailVC.swift */,
 				A1C6D8A42020AF240052B367 /* shepSecondDetailVC.swift */,
@@ -192,7 +192,7 @@
 			files = (
 				A17ADB802087890000F40445 /* tempSingleArray.swift in Sources */,
 				A16DB2CA2092063B00F3CC07 /* searchRadiusViewController.swift in Sources */,
-				A1DEB5F12098FF560052674D /* shepDetailVC2.swift in Sources */,
+				A1DA027120990AB400EDB5AA /* shepEditableDetailVC_2.swift in Sources */,
 				A1DE6E68208688E40053E271 /* allSectionsOfData4TVC.swift in Sources */,
 				A12715792025F914009C6979 /* HeaderInSectionTVCell.swift in Sources */,
 				52509A2E1EB5C7FB00343D64 /* AppDelegate.swift in Sources */,

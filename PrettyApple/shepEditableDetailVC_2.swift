@@ -1,5 +1,5 @@
 //
-//  shepDetailVC2.swift
+//  EditTableViewController.swift
 //
 //  Created by Duc Tran on 3/30/15.
 //  Copyright (c) 2015 Duc Tran. All rights reserved.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class shepDetailVC2: UITableViewController, UITextFieldDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class shepEditableDetailVC_2: UITableViewController, UITextFieldDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     // Model:
     var shepProductDetail: ShepSingleXYZ?
@@ -15,21 +15,44 @@ class shepDetailVC2: UITableViewController, UITextFieldDelegate, UITextViewDeleg
     @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var productTitleLabel: UITextField!
     @IBOutlet weak var productDescriptionTextView: UITextView!
-
+    @IBOutlet weak var myImage1: UIImageView!
+    @IBOutlet weak var myImage2: UIImageView!
+    @IBOutlet weak var myImage3: UIImageView!
+    @IBOutlet weak var myImage4: UIImageView!
+    @IBOutlet weak var myImage5: UIImageView!
+    @IBOutlet weak var myImage6: UIImageView!
+    @IBOutlet weak var lbTitle: UILabel!
+    @IBOutlet weak var lblStreetAddress: UILabel!
+    @IBOutlet weak var lblPay2: UILabel!
+    @IBOutlet weak var lblDistance: UILabel!
+    @IBOutlet weak var lblJobType: UILabel!
+    @IBOutlet weak var lblFoodType: UILabel!
+    
     // MARK: - VC Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Detail View"
-        productImageView.image = shepProductDetail?.image
+        myImage1.image = shepProductDetail?.image
+        myImage2.image = shepProductDetail?.image
+        myImage3.image = shepProductDetail?.image
+        myImage4.image = shepProductDetail?.image
+        myImage5.image = shepProductDetail?.image
+        myImage6.image = shepProductDetail?.image
+        lblPay2.text = "Dollars: \(shepCurrencyFromDouble(shepNumber : (shepProductDetail?.dollar)!))"
+        lblDistance.text = "\(String(describing: shepProductDetail!.distance)) miles"
+        lblJobType.text = shepProductDetail?.jobType
+        lblFoodType.text = shepProductDetail?.foodType
+        //productImageView.image = shepProductDetail?.image
+        lbTitle.text = shepProductDetail?.title
         productTitleLabel.text = shepProductDetail?.title
         productDescriptionTextView.text = shepProductDetail?.description
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        shepProductDetail?.title = productTitleLabel.text!
-        shepProductDetail?.description = productDescriptionTextView.text
-        shepProductDetail?.image = productImageView.image!
-    }
+//    override func viewWillDisappear(_ animated: Bool) {
+//        shepProductDetail?.title = productTitleLabel.text!
+//        shepProductDetail?.description = productDescriptionTextView.text
+//        shepProductDetail?.image = productImageView.image!
+//    }
     
     // MARK: - UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -39,7 +62,7 @@ class shepDetailVC2: UITableViewController, UITextFieldDelegate, UITextViewDeleg
     }
     
     // MARK: - UIScrollViewDelegate (is a subclass of UITableViewController)
-    override func scrollViewWillBeginDragging(_ scrolcView: UIScrollView) {
+    override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         // resigns keyboard whenever view scrolls
         productDescriptionTextView.resignFirstResponder()
     }

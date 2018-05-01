@@ -287,7 +287,7 @@ override func tableView(_ tableView: UITableView, commit editingStyle: UITableVi
                         productDetailVC.product = productAtIndexPath(indexPath)
                     }
                 case "Show Editable Detail":
-                    let editTableVC = segue.destination as! shepEditableDetailVC
+                    let editTableVC = segue.destination as! shepEditableDetailVC_2
                     if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell) {
                         editTableVC.shepProductDetail = productAtIndexPath(indexPath)
                     }
