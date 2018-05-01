@@ -77,8 +77,8 @@ class ShepTableViewCell: UITableViewCell {
         photoImageView.image = product.image
         CategoryLbl1.text = product.jobType
         CategoryLbl2.text = product.foodType
-        EarningLbl.text = shepCurrencyFromDouble(shepNumber : product.dollar)
-        DrivingDistanceLbl.text = String(product.distance) + " mi."
+        EarningLbl.text = "Dollars: \(shepCurrencyFromDouble(shepNumber : product.dollar))"
+        DrivingDistanceLbl.text = String(product.distance) + " miles"
     }
     
     override func awakeFromNib() {

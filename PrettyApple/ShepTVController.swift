@@ -69,10 +69,13 @@ class ShepTVController: UITableViewController, UIPopoverPresentationControllerDe
 //        //tableView.estimatedRowHeight = 185.0
 //        tableView.rowHeight = UITableViewAutomaticDimension
         tableView.contentSize.height = 150
-        
-        //NOT NEEDED??
-        // Not exactly sure what's happening here, but generally we're seeting up some kind of notifier to trigger @objc func loadList()
-        //NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)
+
+        navigationItem.title = "shepTest TableView"
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = true
+        } else {
+            // Fallback on earlier versions
+        }
         
         
         // --------------------------------------------------------------------------
@@ -147,7 +150,7 @@ class ShepTVController: UITableViewController, UIPopoverPresentationControllerDe
     override func numberOfSections(in tableView: UITableView) -> Int {
         let temp = BigKahunaSectionedArray.count
         print("I'm in numberOfSections(in tableView  counting BigKahunaSectionedArray w sort \(whichSort)")
-        print("The count is \(temp) \n")
+        print("The BigKahunaSectionedArray.count is \(temp) \n")
         return BigKahunaSectionedArray.count
     }
 
@@ -157,7 +160,7 @@ class ShepTVController: UITableViewController, UIPopoverPresentationControllerDe
         print("\n I'm counting a SECTION of BigKahunaSectionedArray w sort \(whichSort)")
         print("I'm counting a SECTION of BigKahunaSectionedArray w SECTION NAME \(temp.sectionName)")
         print("I'm counting a SECTION of BigKahunaSectionedArray w SECTION ??? \(section)")
-        print("The count is \(productLine.oneSectionOfData.count)")
+        print("The oneSectionOfData.count is \(productLine.oneSectionOfData.count)")
         return productLine.oneSectionOfData.count   // the number of products in the section
         //productLine.oneSectionOfData
     }
@@ -312,19 +315,11 @@ override func tableView(_ tableView: UITableView, commit editingStyle: UITableVi
     }
     
     func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
-        //let myshepSortingHatVC = shepSortingHatPopover()
-        //let myOtherDataModel = shepDataModel()
         print ("SORT BY MENU DISMISSED. \n" + "You chose: \(whichSort)")
-      
-        BigKahunaSectionedArray = allSectionsOfData4TVC.handleAllTheSections(whichSort: whichSort)
-        tableView.reloadData()  // Reloads everything from scratch. Redisplays visible rows. Note that this will cause any existing drop placeholder rows to be removed.
-       
-        /*
-        The UITableView's reloadData() method is explicitly a force reload of the entire tableView. It works well, but is usually jarring and a bad user experience if you're going to do that with a tableview that the user is currently looking at.
+        redrawTableView()
         
-        Instead, take a look at reloadRowsAtIndexPaths(_:withRowAnimation:) and
-        reloadSections(_:withRowAnimation:) in the documentation.
-        */
+//        BigKahunaSectionedArray = allSectionsOfData4TVC.handleAllTheSections(whichSort: whichSort)
+//        tableView.reloadData()  // Reloads everything from scratch. Redisplays visible rows. Note that this will cause any existing drop placeholder rows to be removed.
         
     }
     
@@ -332,15 +327,25 @@ override func tableView(_ tableView: UITableView, commit editingStyle: UITableVi
         return .none
     }
     
-    
+    func redrawTableView() {
+        BigKahunaSectionedArray = allSectionsOfData4TVC.handleAllTheSections(whichSort: whichSort)
+        print("I'm in redrawTableView w sort \(whichSort)")
+        self.tableView.reloadData()  // Reloads everything from scratch. Redisplays visible rows. Note that this will cause any existing drop placeholder rows to be removed.
+        /*
+         The UITableView's reloadData() method is explicitly a force reload of the entire tableView. It works well, but is usually jarring and a bad user experience if you're going to do that with a tableview that the user is currently looking at.
+         
+         Instead, take a look at reloadRowsAtIndexPaths(_:withRowAnimation:) and
+         reloadSections(_:withRowAnimation:) in the documentation.
+         */
+    }
     
     // MARK: - Helper Method
     
-    func productAtIndexPath(_ indexPath: IndexPath) -> ShepSingleXYZ
-    {
+    func productAtIndexPath(_ indexPath: IndexPath) -> ShepSingleXYZ {
         let productLine = BigKahunaSectionedArray[indexPath.section]
         return productLine.oneSectionOfData[indexPath.row]
     }
+    
     
     //MARK: Private Methods
   //  private func loadSampleMeals() {
