@@ -39,7 +39,7 @@ class shepEditableDetailVC: UITableViewController, UITextFieldDelegate, UITextVi
     }
     
     // MARK: - UIScrollViewDelegate (is a subclass of UITableViewController)
-    override func scrollViewWillBeginDragging(_ scrolcView: UIScrollView) {
+    override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         // resigns keyboard whenever view scrolls
         productDescriptionTextView.resignFirstResponder()
     }
