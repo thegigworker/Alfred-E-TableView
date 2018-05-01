@@ -154,7 +154,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 52509A251EB5C7FB00343D64 /* Build configuration list for PBXProject "shep_DucTranTableview3" */;
+			buildConfigurationList = 52509A251EB5C7FB00343D64 /* Build configuration list for PBXProject "shep_DucTranTableview4" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -366,7 +366,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		52509A251EB5C7FB00343D64 /* Build configuration list for PBXProject "shep_DucTranTableview3" */ = {
+		52509A251EB5C7FB00343D64 /* Build configuration list for PBXProject "shep_DucTranTableview4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				52509A3A1EB5C7FB00343D64 /* Debug */,
