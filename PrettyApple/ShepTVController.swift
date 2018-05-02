@@ -246,6 +246,27 @@ override func tableView(_ tableView: UITableView, commit editingStyle: UITableVi
      }
      */
 
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let delete = UITableViewRowAction(style: .destructive, title: "Delete?") { (action, indexPath) in
+            // delete item at indexPath
+            print ("You selected the RED DELETE button")
+        }
+        
+        let blueButtonItem = UITableViewRowAction(style: .normal, title: "Button2") { (action, indexPath) in
+            // share item at indexPath
+            print ("You selected the BLUE Button_2")
+        }
+        blueButtonItem.backgroundColor = UIColor.blue
+        
+        let greyButtonItem = UITableViewRowAction(style: .normal, title: "Button1") { (action, indexPath) in
+            // share item at indexPath
+            print ("You selected the GREY Button_1")
+        }
+        greyButtonItem.backgroundColor = UIColor.darkGray
+        
+        return [delete, blueButtonItem, greyButtonItem]
+    }
+    
     
     // MARK: - Moving Cells
     // Override to support conditional rearranging of the table view.
