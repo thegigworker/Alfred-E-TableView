@@ -14,7 +14,7 @@ var whichSort = "foodType"
 //case "jobType" :   // CATEGORY !
 //case "foodType" :   // CATEGORY 2
 
-class shepSortingHatPopover: UIViewController, UIPopoverPresentationControllerDelegate {
+class sortingHatPopover: UIViewController, UIPopoverPresentationControllerDelegate {
     
     //@IBOutlet weak var xyz: UIButton!
     

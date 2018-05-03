@@ -252,13 +252,13 @@ override func tableView(_ tableView: UITableView, commit editingStyle: UITableVi
             print ("You selected the RED DELETE button")
         }
         
-        let blueButtonItem = UITableViewRowAction(style: .normal, title: "Button2") { (action, indexPath) in
+        let blueButtonItem = UITableViewRowAction(style: .normal, title: "Button") { (action, indexPath) in
             // share item at indexPath
             print ("You selected the BLUE Button_2")
         }
         blueButtonItem.backgroundColor = UIColor.blue
         
-        let greyButtonItem = UITableViewRowAction(style: .normal, title: "Button1") { (action, indexPath) in
+        let greyButtonItem = UITableViewRowAction(style: .normal, title: "...") { (action, indexPath) in
             // share item at indexPath
             print ("You selected the GREY Button_1")
         }

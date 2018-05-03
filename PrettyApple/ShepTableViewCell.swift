@@ -79,6 +79,7 @@ class ShepTableViewCell: UITableViewCell {
         CategoryLbl2.text = product.foodType
         EarningLbl.text = "Dollars: \(shepCurrencyFromDouble(shepNumber : product.dollar))"
         DrivingDistanceLbl.text = String(product.distance) + " miles"
+       //self.selectionStyle = UITableViewCellSelectionStyle.blue // not working?
     }
     
     override func awakeFromNib() {
