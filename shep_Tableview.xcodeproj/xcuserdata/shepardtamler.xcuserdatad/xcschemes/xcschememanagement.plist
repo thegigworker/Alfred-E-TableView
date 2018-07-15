@@ -35,6 +35,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>shep_DucTranTableview4.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>

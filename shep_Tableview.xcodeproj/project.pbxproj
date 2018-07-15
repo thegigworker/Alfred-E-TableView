@@ -11,18 +11,19 @@
 		52509A331EB5C7FB00343D64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52509A311EB5C7FB00343D64 /* Main.storyboard */; };
 		52509A351EB5C7FB00343D64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52509A341EB5C7FB00343D64 /* Assets.xcassets */; };
 		52509A381EB5C7FB00343D64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52509A361EB5C7FB00343D64 /* LaunchScreen.storyboard */; };
-		A12715792025F914009C6979 /* HeaderInSectionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12715782025F914009C6979 /* HeaderInSectionTVCell.swift */; };
-		A16DB2CA2092063B00F3CC07 /* searchRadiusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16DB2C92092063B00F3CC07 /* searchRadiusViewController.swift */; };
+		A10DE96620F7A46C0031C9CD /* allSectionsOfData4TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10DE96520F7A46C0031C9CD /* allSectionsOfData4TVC.swift */; };
+		A10DE96820F7A47D0031C9CD /* HeaderInSectionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10DE96720F7A47D0031C9CD /* HeaderInSectionTVCell.swift */; };
+		A10DE96A20F7A48B0031C9CD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A10DE96920F7A48A0031C9CD /* Info.plist */; };
+		A10DE97920F7A49E0031C9CD /* shepEditableDetailVC_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10DE96F20F7A49D0031C9CD /* shepEditableDetailVC_2.swift */; };
+		A10DE97A20F7A49E0031C9CD /* ShepTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10DE97020F7A49D0031C9CD /* ShepTVController.swift */; };
+		A10DE97D20F7A49E0031C9CD /* searchRadiusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10DE97320F7A49E0031C9CD /* searchRadiusViewController.swift */; };
 		A17ADB802087890000F40445 /* tempSingleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17ADB7F2087890000F40445 /* tempSingleArray.swift */; };
 		A1A47089202215C90098B013 /* ShepSingleXYZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1905866201E7BD500759A01 /* ShepSingleXYZ.swift */; };
 		A1A4708A202215D20098B013 /* ShepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1905867201E7BD500759A01 /* ShepTableViewCell.swift */; };
 		A1AAC39720929E90005FBBD7 /* SortingHatPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AAC39620929E90005FBBD7 /* SortingHatPopover.swift */; };
 		A1C6D8A62020AF570052B367 /* shepEditableDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6D8A52020AF270052B367 /* shepEditableDetailVC.swift */; };
 		A1C6D8A72020AF570052B367 /* shepSecondDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6D8A42020AF240052B367 /* shepSecondDetailVC.swift */; };
-		A1C6D8A82020AF570052B367 /* ShepTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6D8A32020AF1F0052B367 /* ShepTVController.swift */; };
 		A1C6D8AF2020AFB70052B367 /* sectionOfProducts_class.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6D8AD2020AFB70052B367 /* sectionOfProducts_class.swift */; };
-		A1DA027120990AB400EDB5AA /* shepEditableDetailVC_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DA027020990AB400EDB5AA /* shepEditableDetailVC_2.swift */; };
-		A1DE6E68208688E40053E271 /* allSectionsOfData4TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DE6E67208688E40053E271 /* allSectionsOfData4TVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,19 +32,19 @@
 		52509A321EB5C7FB00343D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52509A341EB5C7FB00343D64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52509A371EB5C7FB00343D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		52509A391EB5C7FB00343D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		A12715782025F914009C6979 /* HeaderInSectionTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderInSectionTVCell.swift; sourceTree = "<group>"; };
-		A16DB2C92092063B00F3CC07 /* searchRadiusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchRadiusViewController.swift; sourceTree = "<group>"; };
+		A10DE96520F7A46C0031C9CD /* allSectionsOfData4TVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = allSectionsOfData4TVC.swift; path = xPrettyApple/allSectionsOfData4TVC.swift; sourceTree = SOURCE_ROOT; };
+		A10DE96720F7A47D0031C9CD /* HeaderInSectionTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderInSectionTVCell.swift; path = xPrettyApple/HeaderInSectionTVCell.swift; sourceTree = SOURCE_ROOT; };
+		A10DE96920F7A48A0031C9CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = xPrettyApple/Info.plist; sourceTree = "<group>"; };
+		A10DE96F20F7A49D0031C9CD /* shepEditableDetailVC_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shepEditableDetailVC_2.swift; sourceTree = "<group>"; };
+		A10DE97020F7A49D0031C9CD /* ShepTVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShepTVController.swift; sourceTree = "<group>"; };
+		A10DE97320F7A49E0031C9CD /* searchRadiusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchRadiusViewController.swift; sourceTree = "<group>"; };
 		A17ADB7F2087890000F40445 /* tempSingleArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tempSingleArray.swift; sourceTree = "<group>"; };
 		A1905866201E7BD500759A01 /* ShepSingleXYZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShepSingleXYZ.swift; sourceTree = "<group>"; };
 		A1905867201E7BD500759A01 /* ShepTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShepTableViewCell.swift; sourceTree = "<group>"; };
 		A1AAC39620929E90005FBBD7 /* SortingHatPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingHatPopover.swift; sourceTree = "<group>"; };
-		A1C6D8A32020AF1F0052B367 /* ShepTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShepTVController.swift; sourceTree = "<group>"; };
 		A1C6D8A42020AF240052B367 /* shepSecondDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shepSecondDetailVC.swift; sourceTree = "<group>"; };
 		A1C6D8A52020AF270052B367 /* shepEditableDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shepEditableDetailVC.swift; sourceTree = "<group>"; };
 		A1C6D8AD2020AFB70052B367 /* sectionOfProducts_class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sectionOfProducts_class.swift; sourceTree = "<group>"; };
-		A1DA027020990AB400EDB5AA /* shepEditableDetailVC_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shepEditableDetailVC_2.swift; sourceTree = "<group>"; };
-		A1DE6E67208688E40053E271 /* allSectionsOfData4TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allSectionsOfData4TVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +65,7 @@
 				52509A341EB5C7FB00343D64 /* Assets.xcassets */,
 				52509A311EB5C7FB00343D64 /* Main.storyboard */,
 				52509A361EB5C7FB00343D64 /* LaunchScreen.storyboard */,
-				52509A391EB5C7FB00343D64 /* Info.plist */,
+				A10DE96920F7A48A0031C9CD /* Info.plist */,
 				52509A4B1EB5C85A00343D64 /* Model */,
 				52509A4D1EB5C86600343D64 /* Views */,
 				52509A4C1EB5C86000343D64 /* Controllers */,
@@ -83,7 +84,7 @@
 		52509A4B1EB5C85A00343D64 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A1DE6E67208688E40053E271 /* allSectionsOfData4TVC.swift */,
+				A10DE96520F7A46C0031C9CD /* allSectionsOfData4TVC.swift */,
 				A1905866201E7BD500759A01 /* ShepSingleXYZ.swift */,
 				A17ADB7F2087890000F40445 /* tempSingleArray.swift */,
 				A1C6D8AD2020AFB70052B367 /* sectionOfProducts_class.swift */,
@@ -95,12 +96,12 @@
 		52509A4C1EB5C86000343D64 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A1C6D8A32020AF1F0052B367 /* ShepTVController.swift */,
-				A1DA027020990AB400EDB5AA /* shepEditableDetailVC_2.swift */,
+				A10DE97020F7A49D0031C9CD /* ShepTVController.swift */,
+				A10DE96F20F7A49D0031C9CD /* shepEditableDetailVC_2.swift */,
 				A1AAC39620929E90005FBBD7 /* SortingHatPopover.swift */,
 				A1C6D8A52020AF270052B367 /* shepEditableDetailVC.swift */,
 				A1C6D8A42020AF240052B367 /* shepSecondDetailVC.swift */,
-				A16DB2C92092063B00F3CC07 /* searchRadiusViewController.swift */,
+				A10DE97320F7A49E0031C9CD /* searchRadiusViewController.swift */,
 			);
 			name = Controllers;
 			path = PrettyApple;
@@ -110,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				A1905867201E7BD500759A01 /* ShepTableViewCell.swift */,
-				A12715782025F914009C6979 /* HeaderInSectionTVCell.swift */,
+				A10DE96720F7A47D0031C9CD /* HeaderInSectionTVCell.swift */,
 			);
 			name = Views;
 			path = PrettyApple;
@@ -154,7 +155,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 52509A251EB5C7FB00343D64 /* Build configuration list for PBXProject "shep_DucTranTableview4" */;
+			buildConfigurationList = 52509A251EB5C7FB00343D64 /* Build configuration list for PBXProject "shep_Tableview" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -177,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A10DE96A20F7A48B0031C9CD /* Info.plist in Resources */,
 				52509A381EB5C7FB00343D64 /* LaunchScreen.storyboard in Resources */,
 				52509A351EB5C7FB00343D64 /* Assets.xcassets in Resources */,
 				52509A331EB5C7FB00343D64 /* Main.storyboard in Resources */,
@@ -191,18 +193,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A17ADB802087890000F40445 /* tempSingleArray.swift in Sources */,
-				A16DB2CA2092063B00F3CC07 /* searchRadiusViewController.swift in Sources */,
-				A1DA027120990AB400EDB5AA /* shepEditableDetailVC_2.swift in Sources */,
-				A1DE6E68208688E40053E271 /* allSectionsOfData4TVC.swift in Sources */,
-				A12715792025F914009C6979 /* HeaderInSectionTVCell.swift in Sources */,
+				A10DE97A20F7A49E0031C9CD /* ShepTVController.swift in Sources */,
 				52509A2E1EB5C7FB00343D64 /* AppDelegate.swift in Sources */,
-				A1C6D8A82020AF570052B367 /* ShepTVController.swift in Sources */,
+				A10DE97D20F7A49E0031C9CD /* searchRadiusViewController.swift in Sources */,
 				A1C6D8A62020AF570052B367 /* shepEditableDetailVC.swift in Sources */,
+				A10DE96820F7A47D0031C9CD /* HeaderInSectionTVCell.swift in Sources */,
 				A1A47089202215C90098B013 /* ShepSingleXYZ.swift in Sources */,
 				A1C6D8A72020AF570052B367 /* shepSecondDetailVC.swift in Sources */,
+				A10DE97920F7A49E0031C9CD /* shepEditableDetailVC_2.swift in Sources */,
 				A1AAC39720929E90005FBBD7 /* SortingHatPopover.swift in Sources */,
 				A1A4708A202215D20098B013 /* ShepTableViewCell.swift in Sources */,
 				A1C6D8AF2020AFB70052B367 /* sectionOfProducts_class.swift in Sources */,
+				A10DE96620F7A46C0031C9CD /* allSectionsOfData4TVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 593ZXM85A3;
-				INFOPLIST_FILE = PrettyApple/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/xPrettyApple/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.ductran.PrettyApple;
 				PRODUCT_NAME = shepProductName;
@@ -355,7 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 593ZXM85A3;
-				INFOPLIST_FILE = PrettyApple/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/xPrettyApple/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.ductran.PrettyApple;
 				PRODUCT_NAME = shepProductName;
@@ -366,7 +368,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		52509A251EB5C7FB00343D64 /* Build configuration list for PBXProject "shep_DucTranTableview4" */ = {
+		52509A251EB5C7FB00343D64 /* Build configuration list for PBXProject "shep_Tableview" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				52509A3A1EB5C7FB00343D64 /* Debug */,

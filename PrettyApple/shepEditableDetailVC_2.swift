@@ -31,7 +31,7 @@ class shepEditableDetailVC_2: UITableViewController, UITextFieldDelegate, UIText
     // MARK: - VC Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Detail View _shep"
+        title = "Detail View"
         myImage1.image = shepProductDetail?.image
         myImage2.image = shepProductDetail?.image
         myImage3.image = shepProductDetail?.image
@@ -46,6 +46,11 @@ class shepEditableDetailVC_2: UITableViewController, UITextFieldDelegate, UIText
         lbTitle.text = shepProductDetail?.title
         productTitleLabel.text = shepProductDetail?.title
         productDescriptionTextView.text = shepProductDetail?.description
+        if #available(iOS 11.0, *) {
+            self.navigationItem.largeTitleDisplayMode = .never
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
 //    override func viewWillDisappear(_ animated: Bool) {

@@ -2,11 +2,21 @@
 //  UI POPOVER PRESENTATION CONTROLLER
 //
 
+/*
+ A NOTE RE ?? OPERATOR RE OPTIONALS
+ "nil coalescing operator" (also called "default operator")
+ 
+ let something = myVariable ?? myOtherVariable
+ Can be thought of as  "let something = UNWRAPPED myVariable if it's not nil, OTHERWISE let something = myOtherVariable"
+ 
+ equivalent to
+ let something = myVariable != nil ? myVariable! : myOtherVariable
+ */
 
 import UIKit
 import MapKit
 
-var whichSort = "foodType"
+var whichSort = "distance"
 
 //case "distance" : // SINGLE SECTION 1
 //case "title" : // SINGLE SECTION 2
